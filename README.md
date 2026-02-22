@@ -2,7 +2,7 @@
 
 A comprehensive life decision simulator that helps users visualize potential outcomes before making important choices. Features a multi-agent AI advisory board providing personalized guidance from multiple perspectives.
 
-![Foresight Screenshot](https://via.placeholder.com/800x400/1a1a2e/ffffff?text=Foresight+AI+Decision+Platform)
+![Foresight Screenshot](./screenshots/decision-input.png)
 
 ## Features
 
