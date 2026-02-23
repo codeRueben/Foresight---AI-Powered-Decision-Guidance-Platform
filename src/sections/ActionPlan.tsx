@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useSimulation } from '@/context/SimulationContext';
 import { AI_AGENTS, generateMockAnalysis, generateActionPlan } from '@/lib/ai-agents';
 import type { ActionItem, Resource, Milestone } from '@/types/ai-agents';
-import { CheckSquare, Clock, BookOpen, Target, Calendar, Check, Circle, ExternalLink, Trash2, RotateCcw } from 'lucide-react';
+import { CheckSquare, Clock, BookOpen, Target, Calendar, Check, ExternalLink, Trash2, RotateCcw } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 

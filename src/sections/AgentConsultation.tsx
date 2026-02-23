@@ -14,7 +14,7 @@ export function AgentConsultation() {
   const sectionRef = useRef<HTMLElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   
-  const { decision, factors, simulationResult } = useSimulation();
+  const { decision, factors } = useSimulation();
   
   const [selectedAgents, setSelectedAgents] = useState<string[]>(
     AI_AGENTS.map(a => a.id)

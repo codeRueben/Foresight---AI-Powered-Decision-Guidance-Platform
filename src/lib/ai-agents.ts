@@ -1,4 +1,4 @@
-import type { AIAgent, AgentAnalysis, ActionPlan, ActionItem, Resource, Milestone } from '@/types/ai-agents';
+import type { AIAgent, AgentAnalysis, ActionPlan } from '@/types/ai-agents';
 
 export const AI_AGENTS: AIAgent[] = [
   {
@@ -89,10 +89,10 @@ Be empathetic and holistic. Consider the whole person, not just the practical as
 // Mock analysis generator for development (free tier)
 export function generateMockAnalysis(
   agentId: string,
-  decision: string,
+  _decision: string,
   factors: { riskTolerance: number; financialStability: number; disciplineLevel: number; supportSystem: number }
 ): AgentAnalysis {
-  const agent = AI_AGENTS.find(a => a.id === agentId)!;
+  const _agent = AI_AGENTS.find(a => a.id === agentId)!;
   
   const riskLevel = factors.riskTolerance > 60 ? 'high' : factors.riskTolerance < 40 ? 'low' : 'moderate';
   const financialLevel = factors.financialStability > 60 ? 'secure' : 'challenging';
@@ -217,8 +217,8 @@ export function generateMockAnalysis(
 
 // Generate comprehensive action plan
 export function generateActionPlan(
-  analyses: AgentAnalysis[],
-  decision: string
+  _analyses: AgentAnalysis[],
+  _decision: string
 ): ActionPlan {
   return {
     shortTerm: [

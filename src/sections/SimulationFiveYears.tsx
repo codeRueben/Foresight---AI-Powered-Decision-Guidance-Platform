@@ -38,7 +38,7 @@ export function SimulationFiveYears() {
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
   
-  const { simulationResult } = useSimulation();
+  const { simulationResult: _simulationResult } = useSimulation();
 
   useLayoutEffect(() => {
     const section = sectionRef.current;

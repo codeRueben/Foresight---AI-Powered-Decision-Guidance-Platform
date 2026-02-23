@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { AI_AGENTS } from '@/lib/ai-agents';
 import type { ConversationMessage } from '@/types/ai-agents';
-import { Send, X, MessageCircle, User, Bot, Loader2 } from 'lucide-react';
+import { Send, X, User, Bot, Loader2 } from 'lucide-react';
 import { apiClient } from '@/lib/api';
 
 interface AIChatProps {
