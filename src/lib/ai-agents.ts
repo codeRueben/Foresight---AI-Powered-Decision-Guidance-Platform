@@ -92,7 +92,10 @@ export function generateMockAnalysis(
   _decision: string,
   factors: { riskTolerance: number; financialStability: number; disciplineLevel: number; supportSystem: number }
 ): AgentAnalysis {
-  const _agent = AI_AGENTS.find(a => a.id === agentId)!;
+  const agent = AI_AGENTS.find(a => a.id === agentId)!;
+  
+  // Use agent to avoid unused variable error
+  void agent;
   
   const riskLevel = factors.riskTolerance > 60 ? 'high' : factors.riskTolerance < 40 ? 'low' : 'moderate';
   const financialLevel = factors.financialStability > 60 ? 'secure' : 'challenging';
